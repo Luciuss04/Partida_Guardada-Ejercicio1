@@ -9,7 +9,6 @@ hide:
 
 Esta web es la **presentación del proyecto** Partida Guardada, el primer ejercicio del Proyecto Intermodular de 2º de Desarrollo de Aplicaciones Multiplataforma.
 
-Está pensada para el público general. La documentación técnica completa del proyecto se mantiene aparte.
 
 ## Cómo está hecha
 
