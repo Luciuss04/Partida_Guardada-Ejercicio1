@@ -1,0 +1,135 @@
+/* Identidad visual de Partida Guardada: oscuro, morado y dorado. */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap");
+
+:root {
+  --pg-fondo: #14101a;
+  --pg-superficie: #201a29;
+  --pg-borde: #3d3350;
+  --pg-morado: #4b2c78;
+  --pg-morado-oscuro: #2e1a4a;
+  --pg-morado-claro: #a58ad6;
+  --pg-oro: #c9a95f;
+  --pg-oro-claro: #e2cd97;
+  --pg-texto: #ece6f3;
+  --pg-texto-suave: #b3aabf;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 270;
+  --md-default-bg-color: var(--pg-fondo);
+  --md-default-fg-color: var(--pg-texto);
+  --md-default-fg-color--light: var(--pg-texto-suave);
+  --md-typeset-color: var(--pg-texto);
+  --md-primary-fg-color: var(--pg-morado-oscuro);
+  --md-primary-fg-color--light: var(--pg-morado);
+  --md-primary-fg-color--dark: #1a0f2b;
+  --md-primary-bg-color: #f3ecdc;
+  --md-accent-fg-color: var(--pg-oro);
+  --md-accent-fg-color--transparent: rgba(201, 169, 95, 0.12);
+  --md-typeset-a-color: var(--pg-oro-claro);
+  --md-code-bg-color: #1b1325;
+  --md-footer-bg-color: #1a0f2b;
+  --md-footer-bg-color--dark: #120a1e;
+}
+
+/* Cinzel solo en los títulos; el texto sigue en Inter para que se lea bien. */
+.md-typeset h1,
+.md-typeset h2 {
+  font-family: "Cinzel", "Inter", serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: var(--pg-oro-claro);
+}
+
+.md-typeset h2 {
+  margin-top: 2.2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--pg-borde);
+}
+
+.md-typeset h3 {
+  color: var(--pg-texto);
+  font-weight: 600;
+}
+
+/* Portada */
+.pg-portada {
+  text-align: center;
+  padding: 1.5rem 0 0.5rem;
+}
+
+.pg-portada h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.2em;
+}
+
+.pg-lema {
+  font-size: 1.15rem;
+  color: var(--pg-texto-suave);
+  max-width: 36rem;
+  margin: 0 auto 1.4rem;
+}
+
+.md-typeset .md-button {
+  border-color: var(--pg-oro);
+  color: var(--pg-oro-claro);
+  border-radius: 8px;
+}
+
+.md-typeset .md-button--primary {
+  background-color: var(--pg-morado);
+  border-color: var(--pg-morado);
+  color: var(--pg-texto);
+}
+
+.md-typeset .md-button:focus,
+.md-typeset .md-button:hover {
+  background-color: var(--pg-oro);
+  border-color: var(--pg-oro);
+  color: var(--pg-fondo);
+}
+
+/* Tarjetas, tablas, avisos e imágenes */
+.md-typeset .grid.cards > ul > li {
+  background: var(--pg-superficie);
+  border: 1px solid var(--pg-borde);
+  border-radius: 12px;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--pg-oro);
+}
+
+.md-typeset table:not([class]) {
+  border: 1px solid var(--pg-borde);
+  border-radius: 12px;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--pg-superficie);
+  color: var(--pg-oro-claro);
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 12px;
+  background: var(--pg-superficie);
+}
+
+.md-typeset figure img {
+  border-radius: 12px;
+  border: 1px solid var(--pg-borde);
+}
+
+.md-typeset figcaption {
+  color: var(--pg-texto-suave);
+  font-size: 0.75rem;
+  max-width: 100%;
+}
+
+/* Las cuatro tarjetas de la portada, de dos en dos. */
+@media screen and (min-width: 45em) {
+  .md-typeset .grid.pg-dos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
