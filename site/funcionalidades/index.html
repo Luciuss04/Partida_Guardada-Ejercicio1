@@ -1,0 +1,1241 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Presentación de Partida Guardada, una plataforma para organizar tu colección de videojuegos">
+      
+      
+        <meta name="author" content="Josep Pérez Morente">
+      
+      
+        <link rel="canonical" href="https://luciuss04.github.io/Partida_Guardada/funcionalidades/">
+      
+      
+        <link rel="prev" href="../proyecto/">
+      
+      
+        <link rel="next" href="../publico/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Funcionalidades - Partida Guardada</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../estilos/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#funcionalidades" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="Partida Guardada" class="md-header__button md-logo" aria-label="Partida Guardada" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V7zm2 16H5V5h11.17L19 7.83zm-7-7c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3M6 6h9v4H6z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Partida Guardada
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Funcionalidades
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../proyecto/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  El proyecto
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Funcionalidades
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../publico/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Público objetivo
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sobre-esta-web/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Sobre esta web
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Partida Guardada" class="md-nav__button md-logo" aria-label="Partida Guardada" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14c1.1 0 2-.9 2-2V7zm2 16H5V5h11.17L19 7.83zm-7-7c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3M6 6h9v4H6z"/></svg>
+
+    </a>
+    Partida Guardada
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../proyecto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    El proyecto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funcionalidades
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funcionalidades
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tu-coleccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tu colección
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tu colección">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#catalogo-de-videojuegos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Catálogo de videojuegos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biblioteca-personal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Biblioteca personal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estados-del-juego" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estados del juego
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lista-de-pendientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lista de pendientes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listas-personalizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listas personalizadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tu-opinion-y-tu-progreso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tu opinión y tu progreso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tu opinión y tu progreso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valoraciones-y-resenas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valoraciones y reseñas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perfil-y-estadisticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perfil y estadísticas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insignias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Insignias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otros-jugadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Otros jugadores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Otros jugadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comunidad-de-cada-juego" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comunidad de cada juego
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mensajes-privados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mensajes privados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seguir-a-otros-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seguir a otros usuarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convivencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convivencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-todo-el-mundo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para todo el mundo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Para todo el mundo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#en-ingles-y-en-espanol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        En inglés y en español
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-la-web-y-en-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        En la web y en Android
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lo-que-no-sera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que no será
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../publico/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Público objetivo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sobre-esta-web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sobre esta web
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tu-coleccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tu colección
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tu colección">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#catalogo-de-videojuegos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Catálogo de videojuegos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biblioteca-personal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Biblioteca personal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estados-del-juego" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Estados del juego
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lista-de-pendientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lista de pendientes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listas-personalizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Listas personalizadas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tu-opinion-y-tu-progreso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tu opinión y tu progreso
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tu opinión y tu progreso">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#valoraciones-y-resenas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valoraciones y reseñas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perfil-y-estadisticas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perfil y estadísticas
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insignias" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Insignias
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otros-jugadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Otros jugadores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Otros jugadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comunidad-de-cada-juego" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Comunidad de cada juego
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mensajes-privados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mensajes privados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seguir-a-otros-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seguir a otros usuarios
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#convivencia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Convivencia
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#para-todo-el-mundo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para todo el mundo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Para todo el mundo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#en-ingles-y-en-espanol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        En inglés y en español
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-la-web-y-en-android" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        En la web y en Android
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lo-que-no-sera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lo que no será
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="funcionalidades">Funcionalidades<a class="headerlink" href="#funcionalidades" title="Permanent link">&para;</a></h1>
+<p>Esto es lo que la plataforma permitirá hacer, contado desde el punto de vista de quien la usa. Todas las funcionalidades están <strong>propuestas y diseñadas</strong>; ninguna está disponible todavía.</p>
+<h2 id="tu-coleccion">Tu colección<a class="headerlink" href="#tu-coleccion" title="Permanent link">&para;</a></h2>
+<h3 id="catalogo-de-videojuegos">Catálogo de videojuegos<a class="headerlink" href="#catalogo-de-videojuegos" title="Permanent link">&para;</a></h3>
+<p>Podrás <strong>buscar cualquier juego por su nombre</strong> y consultar su ficha: portada, plataformas, género, fecha de lanzamiento y descripción. No hará falta escribir los datos a mano.</p>
+<h3 id="biblioteca-personal">Biblioteca personal<a class="headerlink" href="#biblioteca-personal" title="Permanent link">&para;</a></h3>
+<p>Los juegos que añadas formarán tu biblioteca. De cada uno podrás indicar, si quieres, <em>en qué plataforma lo tienes</em>.</p>
+<h3 id="estados-del-juego">Estados del juego<a class="headerlink" href="#estados-del-juego" title="Permanent link">&para;</a></h3>
+<p>Cada juego de tu biblioteca tendrá uno de estos cinco estados, y podrás cambiarlo cuando quieras:</p>
+<table>
+<thead>
+<tr>
+<th>Estado</th>
+<th>Para qué sirve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pendiente</strong></td>
+<td>Juegos que tienes y todavía no has empezado.</td>
+</tr>
+<tr>
+<td><strong>Jugando</strong></td>
+<td>Juegos que tienes en curso.</td>
+</tr>
+<tr>
+<td><strong>Completado</strong></td>
+<td>Juegos que has terminado.</td>
+</tr>
+<tr>
+<td><strong>Pausado</strong></td>
+<td>Juegos que has dejado aparcados por un tiempo.</td>
+</tr>
+<tr>
+<td><strong>Abandonado</strong></td>
+<td>Juegos que no piensas terminar.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="lista-de-pendientes">Lista de pendientes<a class="headerlink" href="#lista-de-pendientes" title="Permanent link">&para;</a></h3>
+<p>Tus juegos pendientes formarán tu <em>backlog</em>: una vista ordenada por el tiempo que llevan esperando, pensada para decidir a qué jugar a continuación.</p>
+<h3 id="listas-personalizadas">Listas personalizadas<a class="headerlink" href="#listas-personalizadas" title="Permanent link">&para;</a></h3>
+<p>En la web podrás crear listas propias para agrupar juegos por el tema que quieras, como «Juegos para este verano».</p>
+<h2 id="tu-opinion-y-tu-progreso">Tu opinión y tu progreso<a class="headerlink" href="#tu-opinion-y-tu-progreso" title="Permanent link">&para;</a></h2>
+<h3 id="valoraciones-y-resenas">Valoraciones y reseñas<a class="headerlink" href="#valoraciones-y-resenas" title="Permanent link">&para;</a></h3>
+<p>Podrás <strong>puntuar de 1 a 5</strong> los juegos de tu biblioteca y, si te apetece, escribir una reseña. En la ficha de cada juego verás también las reseñas de otras personas.</p>
+<h3 id="perfil-y-estadisticas">Perfil y estadísticas<a class="headerlink" href="#perfil-y-estadisticas" title="Permanent link">&para;</a></h3>
+<p>Tu perfil reunirá tus datos, tus reseñas y tus insignias. Además, podrás consultar estadísticas sencillas sobre tus hábitos:</p>
+<ul>
+<li>cuántos juegos tienes en cada estado;</li>
+<li>cuántos has completado cada año;</li>
+<li>qué géneros juegas más.</li>
+</ul>
+<h3 id="insignias">Insignias<a class="headerlink" href="#insignias" title="Permanent link">&para;</a></h3>
+<p>Algunos perfiles mostrarán una insignia que identifica a la persona que hay detrás, como el creador de la plataforma o sus administradores.</p>
+<h2 id="otros-jugadores">Otros jugadores<a class="headerlink" href="#otros-jugadores" title="Permanent link">&para;</a></h2>
+<h3 id="comunidad-de-cada-juego">Comunidad de cada juego<a class="headerlink" href="#comunidad-de-cada-juego" title="Permanent link">&para;</a></h3>
+<p>Cada juego tendrá un espacio para <strong>preguntas y debates</strong>. Cualquier persona con cuenta podrá leerlo; para escribir hará falta tener ese juego en la biblioteca, de modo que quien responde lo conoce.</p>
+<h3 id="mensajes-privados">Mensajes privados<a class="headerlink" href="#mensajes-privados" title="Permanent link">&para;</a></h3>
+<p>Podrás escribir en privado a otra persona. Las conversaciones serán siempre <em>entre dos</em>, y solo de texto.</p>
+<h3 id="seguir-a-otros-usuarios">Seguir a otros usuarios<a class="headerlink" href="#seguir-a-otros-usuarios" title="Permanent link">&para;</a></h3>
+<p>Podrás buscar a otros jugadores, seguir su perfil y, si os seguís mutuamente, dejar un comentario en él. Seguir a alguien no generará avisos ni un muro de actividad.</p>
+<h3 id="convivencia">Convivencia<a class="headerlink" href="#convivencia" title="Permanent link">&para;</a></h3>
+<p>Podrás <strong>bloquear</strong> a quien no quieras que te escriba y <strong>denunciar</strong> cualquier contenido inadecuado para que lo revise el equipo de administración.</p>
+<h2 id="para-todo-el-mundo">Para todo el mundo<a class="headerlink" href="#para-todo-el-mundo" title="Permanent link">&para;</a></h2>
+<h3 id="en-ingles-y-en-espanol">En inglés y en español<a class="headerlink" href="#en-ingles-y-en-espanol" title="Permanent link">&para;</a></h3>
+<p>Toda la interfaz estará disponible en los dos idiomas. Se abrirá en español si tu navegador o tu teléfono están en español, y siempre podrás cambiarlo.</p>
+<div class="admonition info">
+<p class="admonition-title">Lo que escriben los usuarios no se traduce</p>
+<p>Las reseñas, los mensajes y los debates se mostrarán tal como se escribieron.</p>
+</div>
+<h3 id="en-la-web-y-en-android">En la web y en Android<a class="headerlink" href="#en-la-web-y-en-android" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: center;">Web</th>
+<th style="text-align: center;">Android</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Buscar juegos y ver su ficha</td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: center;">Sí</td>
+</tr>
+<tr>
+<td>Biblioteca, estados y pendientes</td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: center;">Sí</td>
+</tr>
+<tr>
+<td>Valoraciones y reseñas</td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: center;">Sí</td>
+</tr>
+<tr>
+<td>Comunidad y mensajes</td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: center;">Sí</td>
+</tr>
+<tr>
+<td>Estadísticas</td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: center;">Sí</td>
+</tr>
+<tr>
+<td>Listas personalizadas</td>
+<td style="text-align: center;">Sí</td>
+<td style="text-align: center;">No</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lo-que-no-sera">Lo que no será<a class="headerlink" href="#lo-que-no-sera" title="Permanent link">&para;</a></h2>
+<p>Para mantener el proyecto centrado, <strong>no</strong> se plantea como una red social. No habrá muro de actividad, ni grupos, ni llamadas de voz o de vídeo, y tampoco se conectará con tus cuentas de tiendas o consolas: los juegos los añades tú.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../proyecto/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: El proyecto">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                El proyecto
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../publico/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Público objetivo">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Público objetivo
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Proyecto Intermodular · 2º DAM · Josep Pérez Morente
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.footer", "toc.follow", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
